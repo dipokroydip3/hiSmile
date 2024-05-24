@@ -8,6 +8,7 @@ import {
 
 import './index.css'
 import Root from './Root';
+import Home from './home/Home';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children: [
       {
-        path: "/"
+        path: "/",
+        element: <Home></Home>
       }
     ]
   },
