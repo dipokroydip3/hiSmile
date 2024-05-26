@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
       return (
-            <div className="py-20 bg-[#FAFAFC]">
-                  <div className="grid w-11/12 m-auto grid-cols-12">
+            <div className=" bg-[#FAFAFC]">
+                  <div className="grid w-11/12 m-auto py-20 grid-cols-12">
                         <div className="col-span-3 pr-10">
                               <h2 className="text-3xl font-semibold">Shope your best sellers</h2>
                               <p className="text-[#9B9B9D] py-5">Explore your range of fan-favorites</p>
@@ -33,6 +33,9 @@ const Products = () => {
                                     <button className="bg-[#007AFF] text-white  py-3 font-bold rounded-full w-full">Customize bundle</button>
                               </div>
                               <div className="relative">
+                                    <div className="absolute  top-0 right-0 text-center  text-white  left-0 ">
+                                          <h2 className="bg-[#EC008C] py-1 px-2 rounded inline">Clinically Proven</h2>
+                                    </div>
                                     <div>
                                           <div className="bg-[#F2F2F7] rounded-md">
                                                 <img src={product3} alt="" />
@@ -42,9 +45,7 @@ const Products = () => {
                                           <button className="bg-black text-white  py-3 font-bold rounded-full w-full ">Add to cart</button>
 
                                     </div>
-                                    <div className="absolute  top-0 right-0 text-center  text-white  left-0 ">
-                                          <h2 className="bg-[#EC008C] py-1 px-2 rounded inline">Clinically Proven</h2>
-                                    </div>
+
                               </div>
                               {/* <div>
                                     <img src={product4} alt="" />
