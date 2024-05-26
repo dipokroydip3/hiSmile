@@ -1,3 +1,5 @@
+
+
 /* @keyframes marquee {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
@@ -8,3 +10,12 @@
   white-space: nowrap;
   animation: marquee 20s linear infinite;
 } */
+
+.dream_background {
+  background-image: url('../src/assets/3for20showcase_-_d_1536x.webp');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  height: 90vh;
+
+}
