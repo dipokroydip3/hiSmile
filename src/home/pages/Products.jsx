@@ -15,10 +15,21 @@ const Products = () => {
                               <p className="text-[#9B9B9D] py-5">Explore your range of fan-favorites</p>
                               <Link className="border inline-flex items-center gap-2  rounded-full px-5 py-2">Shope all<FaAngleRight /></Link>
                         </div>
-                        <div className="col-span-9 relative gap-5 grid grid-cols-3 overflow-hidden">
+                        <div className="col-span-9  gap-5 grid grid-cols-3 ">
                               <div >
-                                    <div className="bg-[#F2F2F7] rounded-md">
+                                    <div className="bg-[#F2F2F7] relative rounded-md">
                                           <img src={product1} alt="" />
+                                          <div className="absolute h-full bg-[#E5E5EA] px-2 space-y-2 py-8 rounded top-0">
+                                                <div className="w-10 h-10 cursor-pointer  rounded bg-[#CDA9FE]"></div>
+                                                <div className="w-10 h-10 cursor-pointer  rounded bg-[#ADECB0]"></div>
+                                                <div className="w-10 h-10  cursor-pointer rounded bg-[#FFC2E8]"></div>
+                                                <div className="w-10 h-10  cursor-pointer rounded bg-[#A2A2A4]">
+                                                      <img className="rounded" src="/src/assets/LIMITED-HOTPink-ETB-Selector_645x.png" alt="" />
+                                                </div>
+                                                <div className="w-10 text-center cursor-pointer items-center flex justify-center h-10  rounded bg-white">
+                                                      +5
+                                                </div>
+                                          </div>
                                     </div>
                                     <h3 className="text-center text-xl pt-5 ">Purple electric toothbrush</h3>
                                     <h2 className="text-[#EC008C] py-3 text-center">US <span className="text-4xl font-semibold">$79</span></h2>
@@ -32,19 +43,21 @@ const Products = () => {
                                     <h2 className="text-[#EC008C] text-center py-3">US <span className="text-4xl font-semibold">$85</span></h2>
                                     <button className="bg-[#007AFF] text-white  py-3 font-bold rounded-full w-full">Customize bundle</button>
                               </div>
-                              <div className="relative">
-                                    <div className="absolute  top-0 right-0 text-center  text-white  left-0 ">
+                              <div className="">
+                                    
+                                    <div>
+                                          <div className="bg-[#F2F2F7] relative rounded-md">
+                                                <img src={product3} alt="" />
+                                                <div className="absolute  -top-3 right-0 text-center  text-white  left-0 ">
                                           <h2 className="bg-[#EC008C] py-1 px-2 rounded inline">Clinically Proven</h2>
                                     </div>
-                                    <div>
-                                          <div className="bg-[#F2F2F7] rounded-md">
-                                                <img src={product3} alt="" />
                                           </div>
                                           <h3 className="text-center text-xl pt-5 ">V34 Colour Corrector Serum</h3>
                                           <h2 className="text-[#EC008C] py-3 text-center">US <span className="text-4xl font-semibold">$35</span></h2>
                                           <button className="bg-black text-white  py-3 font-bold rounded-full w-full ">Add to cart</button>
 
                                     </div>
+                                    
 
                               </div>
                               {/* <div>

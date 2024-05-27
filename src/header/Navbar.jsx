@@ -4,8 +4,11 @@ import { FaChevronDown } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { CiCircleQuestion } from "react-icons/ci";
 import { LuCircleDot } from "react-icons/lu";
-import { PiSealPercent } from "react-icons/pi";
+import { RiDiscountPercentFill } from "react-icons/ri";
 import { LuShoppingCart } from "react-icons/lu";
+
+import navImg from "../assets/Nav_-_Electric_Toothbrush_555x.webp"
+import navImg2 from "../assets/Unlock_Flavours_-_Hero_-_M_555x.webp"
 
 const Navbar = () => {
       return (
@@ -40,20 +43,38 @@ const Navbar = () => {
                               </div>
                         </div>
                   </div>
-                  <div className='flex items-center justify-between py-3 w-11/12 m-auto'>
+                  <div className='flex relative items-center justify-between w-11/12 m-auto'>
                         <div className='flex items-center gap-10'>
                               <h1 className='text-3xl font-bold'>Hismile</h1>
-                              <ul className='flex gap-10 items-center'>
-                                    <Link className='flex items-center gap-2'>
-                                          SHOPE
-                                          <FaChevronDown />
-                                    </Link>
+                              <ul className='flex gap-10 py-5  items-center'>
+                                    <li className='group'>
+                                          <Link className='flex  items-center gap-2'>
+                                                SHOPE
+                                                <FaChevronDown />
+                                                <div className='absolute hidden  w-full  border-red-400  gap-10 py-10 top-16 bg-[#F2F2F7]'>
+                                                      <ul className='flex flex-col space-y-3'>
+                                                            <Link>Shop all</Link>
+                                                            <Link>Best sellers</Link>
+                                                            <Link>Shop Bundles</Link>
+                                                            <Link>V34 Colour Corrector Serum</Link>
+                                                      </ul>
+                                                      <div>
+                                                            <h2>Shop Electric Toothbrush</h2>
+                                                            <img className='w-96' src={navImg} alt="" />
+                                                      </div>
+                                                      <div>
+                                                            <h2>Flavoured Toothpaste Bundle</h2>
+                                                            <img className='w-96' src={navImg2} alt="" />
+                                                      </div>
+                                                </div>
+                                          </Link>
+                                    </li>
                                     <Link className='flex items-center gap-2'>
                                           EXPLORE
                                           <FaChevronDown />
                                     </Link>
-                                    <Link className='flex items-center gap-2'>
-                                          <PiSealPercent className='text-xl text-[#EC008C]' />
+                                    <Link className='flex text-[#EC008C] font-semibold items-center gap-2'>
+                                          <RiDiscountPercentFill className='text-2xl font-bold text-[#EC008C]' />
                                           BUNDLE & SAVE
                                     </Link>
                               </ul>
