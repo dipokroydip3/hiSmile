@@ -9,7 +9,7 @@ import { LuShoppingCart } from "react-icons/lu";
 
 import navImg from "../assets/Nav_-_Electric_Toothbrush_555x.webp"
 import navImg2 from "../assets/Unlock_Flavours_-_Hero_-_M_555x.webp"
-
+// bg-[#F2F2F7]
 const Navbar = () => {
       return (
             <div>
@@ -43,44 +43,72 @@ const Navbar = () => {
                               </div>
                         </div>
                   </div>
-                  <div className='flex relative items-center justify-between w-11/12 m-auto'>
-                        <div className='flex items-center gap-10'>
-                              <h1 className='text-3xl font-bold'>Hismile</h1>
-                              <ul className='flex gap-10 py-5  items-center'>
-                                    <li className='group'>
-                                          <Link className='flex  items-center gap-2'>
-                                                SHOPE
-                                                <FaChevronDown />
-                                                <div className='absolute hidden  w-full  border-red-400  gap-10 py-10 top-16 bg-[#F2F2F7]'>
-                                                      <ul className='flex flex-col space-y-3'>
-                                                            <Link>Shop all</Link>
-                                                            <Link>Best sellers</Link>
-                                                            <Link>Shop Bundles</Link>
-                                                            <Link>V34 Colour Corrector Serum</Link>
-                                                      </ul>
-                                                      <div>
-                                                            <h2>Shop Electric Toothbrush</h2>
-                                                            <img className='w-96' src={navImg} alt="" />
+                  <div className='relative'>
+                        <div className='flex  items-center justify-between w-11/12 m-auto'>
+                              <div className='flex items-center gap-10'>
+                                    <h1 className='text-3xl font-bold'>Hismile</h1>
+                                    <ul className='flex gap-10    items-center'>
+                                          <li className='group'>
+                                                <Link className='flex py-5  items-center gap-2'>
+                                                      SHOPE
+                                                      <FaChevronDown />
+                                                      <div className='absolute hidden left-0 bg-[#F2F2F7]   group-hover:flex w-full m-auto font-semibold text-[#656567]   gap-10 py-16 top-16 '>
+                                                            <div className='w-11/12 m-auto flex gap-10'>
+                                                                  <ul className='flex  flex-col space-y-5'>
+                                                                        <h1 className='text-black font-bold'>Shope</h1>
+                                                                        <Link>Shop all</Link>
+                                                                        <Link>Best sellers</Link>
+                                                                        <Link>Shop Bundles</Link>
+                                                                        <Link>V34 Colour Corrector Serum</Link>
+                                                                        <Link>PAP+ Whitening Strips</Link>
+                                                                        <Link>Hismile Toothpaste</Link>
+                                                                  </ul>
+                                                                  <div>
+                                                                        <h2 className='py-5 '>Shop Electric Toothbrush</h2>
+                                                                        <img className='w-96' src={navImg} alt="" />
+                                                                  </div>
+                                                                  <div>
+                                                                        <h2 className='py-5 '>Flavoured Toothpaste Bundle</h2>
+                                                                        <img className='w-96' src={navImg2} alt="" />
+                                                                  </div>
+                                                            </div>
                                                       </div>
-                                                      <div>
-                                                            <h2>Flavoured Toothpaste Bundle</h2>
-                                                            <img className='w-96' src={navImg2} alt="" />
+                                                </Link>
+                                          </li>
+                                          <Link className='flex group py-5 items-center gap-2'>
+                                                EXPLORE
+                                                <FaChevronDown />
+                                                <div className='absolute hidden left-0 bg-[#F2F2F7]    group-hover:flex w-full m-auto font-semibold text-[#656567]   gap-10 py-16 top-16 '>
+                                                      <div className='w-11/12 m-auto flex gap-10'>
+                                                            <ul className='flex  flex-col space-y-5'>
+                                                                  <h1 className='text-black font-bold'>Shope</h1>
+                                                                  <Link>Shop all</Link>
+                                                                  <Link>Best sellers</Link>
+                                                                  <Link>Shop Bundles</Link>
+                                                                  <Link>V34 Colour Corrector Serum</Link>
+                                                                  <Link>PAP+ Whitening Strips</Link>
+                                                                  <Link>Hismile Toothpaste</Link>
+                                                            </ul>
+                                                            <div>
+                                                                  <h2 className='py-5 '>Shop Electric Toothbrush</h2>
+                                                                  <img className='w-96' src={navImg} alt="" />
+                                                            </div>
+                                                            <div>
+                                                                  <h2 className='py-5 '>Flavoured Toothpaste Bundle</h2>
+                                                                  <img className='w-96' src={navImg2} alt="" />
+                                                            </div>
                                                       </div>
                                                 </div>
                                           </Link>
-                                    </li>
-                                    <Link className='flex items-center gap-2'>
-                                          EXPLORE
-                                          <FaChevronDown />
-                                    </Link>
-                                    <Link className='flex text-[#EC008C] font-semibold items-center gap-2'>
-                                          <RiDiscountPercentFill className='text-2xl font-bold text-[#EC008C]' />
-                                          BUNDLE & SAVE
-                                    </Link>
-                              </ul>
-                        </div>
-                        <div>
-                              <Link><LuShoppingCart className='text-2xl' /></Link>
+                                          <Link className='flex text-[#EC008C] font-semibold items-center gap-2'>
+                                                <RiDiscountPercentFill className='text-2xl font-bold text-[#EC008C]' />
+                                                BUNDLE & SAVE
+                                          </Link>
+                                    </ul>
+                              </div>
+                              <div>
+                                    <Link><LuShoppingCart className='text-2xl' /></Link>
+                              </div>
                         </div>
                   </div>
             </div>
