@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 const Footer = () => {
       return (
             <div className=" bg-[#FAFAFC]">
-                  <div className="flex gap-28 w-11/12 m-auto py-20">
+                  <div className="grid grid-cols-2 xl:grid-cols-4 justify-between gap-28 w-11/12 m-auto py-20">
                         <div>
                               <h1 className=" font-semibold pb-5">Shope</h1>
                               <ul className="flex text-[#666668]  flex-col space-y-2">

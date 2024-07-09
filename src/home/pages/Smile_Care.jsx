@@ -5,7 +5,7 @@ const Smile_Care = () => {
             <div className="w-11/12 m-auto">
                   <div className="pb-16">
                         <h2 className="text-4xl pb-5 font-semibold">The experts in smilecare <span className="text-gray-400">@hismile</span></h2>
-                        <div className="flex items-center justify-center gap-20">
+                        <div className="grid xl:grid-cols-4 items-center justify-center gap-20">
                               <div className="">
                                     <svg width="250" height="250" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                           <circle cx="100" cy="100" r="90" fill="pink" stroke="gold"  />
